@@ -1,0 +1,19 @@
+U
+
+    ��ph  �                   @   s   d Z G dd� de�ZdS )z=
+This module defines a class MyList that inherits from list.
+c                       s(   e Zd ZdZdd� Z� fdd�Z�  ZS )�MyListzo
+    Represents a list subclass with an additional method
+    to print the list sorted in ascending order.
+    c                 C   s   t t| �� dS )zh
+        Prints the list in ascending sorted order without
+        modifying the original list.
+        N)�print�sorted��self� r   �B/root/alu-higher_level_programming/python-inheritance/1-my_list.py�print_sorted
+   s    zMyList.print_sortedc                    s
+   t � �� S )z@
+        Returns the string representation of the list.
+        )�super�__str__r   ��	__class__r   r   r
+      s    zMyList.__str__)�__name__�
+__module__�__qualname__�__doc__r   r
+   �
+__classcell__r   r   r   r   r      s   r   N)r   �listr   r   r   r   r   �<module>   s   

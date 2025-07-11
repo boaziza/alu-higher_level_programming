@@ -1,0 +1,25 @@
+U
+
+    ��ph�  �                   @   s   d Z G dd� d�ZdS )zS
+Module that defines a BaseGeometry class with area and
+integer_validator methods.
+c                   @   s    e Zd ZdZdd� Zdd� ZdS )�BaseGeometryzG
+    BaseGeometry class with an area method and integer validator.
+    c                 C   s   t d��dS )zb
+        Raises an Exception to indicate
+        that the area method is not implemented.
+        zarea() is not implementedN)�	Exception)�self� r   �H/root/alu-higher_level_programming/python-inheritance/7-base_geometry.py�area
+   s    zBaseGeometry.areac                 C   s4   t |�tk	rt|� d���|dkr0t|� d���dS )a;  
+        Validates that 'value' is an integer greater than 0.
+
+        Args:
+            name (str): The name of the parameter (for error messages).
+            value (any): The value to validate.
+
+        Raises:
+            TypeError: If value is not an integer.
+            ValueError: If value is <= 0.
+        z must be an integer�    z must be greater than 0N)�type�int�	TypeError�
+ValueError)r   �name�valuer   r   r   �integer_validator   s    zBaseGeometry.integer_validatorN)�__name__�
+__module__�__qualname__�__doc__r   r   r   r   r   r   r      s   r   N)r   r   r   r   r   r   �<module>   s   
+
